@@ -5,13 +5,11 @@ fs.readFile('temps.txt',(err, data) => {
   var temperature=data.toString();
   parseInt(temperature)
   console.log(temperature);
+  function min_temp() {
+    temp=temperature
+    console.log(Math.min(temp));
+    return Math.min(temp);
+  }
+  min_temp();
+
 })
-
-
-function min_temp() {
-  temp=temperature
-  console.log(Math.min(temp));
-  return Math.min(temp);
-}
-
-min_temp();
