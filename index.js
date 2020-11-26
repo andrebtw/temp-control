@@ -8,9 +8,10 @@ fs.readFile('temps.txt',(err, data) => {
 })
 
 
-function min_temp(temperature) {
-  console.log(Math.min(temperature));
-  return Math.min(temperature);
+function min_temp(temp) {
+  temp=temperature
+  console.log(Math.min(temp));
+  return Math.min(temp);
 
 }
 
