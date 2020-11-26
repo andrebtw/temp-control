@@ -13,3 +13,5 @@ function min_temp(temperature) {
   return Math.min(temperature);
 
 }
+
+min_temp(temperature);
