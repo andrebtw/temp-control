@@ -1,6 +1,7 @@
 const fs = require("fs");
-const temps = require("/temps.json");
+/*const temps = require("/temps.json");*/
 
+import * as temps from "temps.json";
 
 
 var words=JSON.parse(temps)
