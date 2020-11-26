@@ -1,7 +1,7 @@
 const fs = require("fs")
 
 
-while (true) {
+for (var i=0; i<10; i++) {
 
   fs.readFile('temps.txt',(err, data) => {
     if (err) throw err;
