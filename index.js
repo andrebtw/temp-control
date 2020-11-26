@@ -7,7 +7,7 @@ for (var i=0; i<10; i++) {
     if (err) throw err;
     var array=data.toString().split("\n");
     for (i in array) {
-      console.log(array[i];
+      console.log(array[i]);
     }
     function min_temp() {
       temp=temperature
