@@ -1,6 +1,14 @@
-const fs = require("fs")
+const fs = require("fs");
+const temps = require("/temps.json");
 
 
+
+var words=JSON.parse(temps)
+
+console.log(words)
+
+
+/*
 for (var i=0; i<10; i++) {
 
   fs.readFile('temps.txt',(err, data) => {
@@ -9,13 +17,7 @@ for (var i=0; i<10; i++) {
     for (i in array) {
       console.log(array[i]);
     }
-    function min_temp() {
-      temp=temperature
-      console.log(Math.min(temp));
-      return Math.min(temp);
-    }
-    min_temp();
-
   })
 
 }
+*/
