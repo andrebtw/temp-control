@@ -1,6 +1,6 @@
 const fs = require("fs")
 
-fs.readFile('temps.txt,(err, data) => {
+fs.readFile('temps.txt',(err, data) => {
   if (err) throw err;
   console.log(data.toString());
 })
