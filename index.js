@@ -5,9 +5,9 @@ for (var i=0; i<10; i++) {
 
   fs.readFile('temps.txt',(err, data) => {
     if (err) throw err;
-    var temperature=data.toString();
-    var temperature=parseFloat(temperature)
+    var temperature=data.toString().split("\n");
     console.log(temperature);
+    
     function min_temp() {
       temp=temperature
       console.log(Math.min(temp));
