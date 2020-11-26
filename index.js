@@ -3,7 +3,7 @@ const temps = require("./temps.json");
 
 
 
-var words=JSON.parse(temps)
+var words=JSON.parse(temps["temperatures"])
 
 console.log(words)
 
