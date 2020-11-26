@@ -3,8 +3,8 @@ const fs = require("fs")
 fs.readFile('temps.txt',(err, data) => {
   if (err) throw err;
   var temperature=data.toString();
-  parseInt(temperature)
-  console.log(temperature);
+  var temperature=parseFloat(temperature)
+  console.log(temperature+temperature);
   function min_temp() {
     temp=temperature
     console.log(Math.min(temp));
