@@ -1,23 +1,8 @@
-const fs = require("fs");
-const temps = require("./temps.json");
+var fs = require('fs');
 
-
-
-var words=JSON.parse(temps["temperatures"])
-
-console.log(words)
-
-
-/*
-for (var i=0; i<10; i++) {
-
-  fs.readFile('temps.txt',(err, data) => {
-    if (err) throw err;
-    var array=data.toString().split("\n");
-    for (i in array) {
-      console.log(array[i]);
-    }
-  })
-
+try {
+    var temps = fs.readFileSync('temps.txt', 'utf8');
+    console.log(temps);
+} catch(e) {
+    console.log('Error:', e.stack);
 }
-*/
