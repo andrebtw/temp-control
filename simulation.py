@@ -2,7 +2,7 @@ import random
 import time
 
 
-for i in range(10):
+while True:
     temp=random.randint(0,100)
     f = open("temps.txt", "w")
     f.write(f"{temp}")
