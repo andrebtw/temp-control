@@ -12,7 +12,7 @@ function sleep (time) {
 
 
 while (true) {
-  sleep(1000).then(() => {
+  sleep(500).then(() => {
     try {
         var temps = fs.readFileSync('temps.txt', 'utf8');
         console.log(temps);
