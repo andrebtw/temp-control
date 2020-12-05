@@ -1,4 +1,5 @@
 import random
+import time
 
 
 for i in range(10):
@@ -8,3 +9,4 @@ for i in range(10):
     f.close()
     f = open("demofile3.txt", "r")
     print(f.read())
+    time.sleep(1000)
