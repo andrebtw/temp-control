@@ -9,4 +9,4 @@ for i in range(10):
     f.close()
     f = open("temps.txt", "r")
     print(f.read())
-    time.sleep(1000)
+    time.sleep(1)
