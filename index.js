@@ -2,12 +2,22 @@ var fs = require('fs');
 
 
 
-while (true) {
-  try {
-      var temps = fs.readFileSync('temps.txt', 'utf8');
-      console.log(temps);
-  } catch(e) {
-      console.log('Error:', e.stack);
-  }
 
+// sleep time expects milliseconds
+function sleep (time) {
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
+
+
+
+
+while (true) {
+  sleep(1000).then(() => {
+    try {
+        var temps = fs.readFileSync('temps.txt', 'utf8');
+        console.log(temps);
+    } catch(e) {
+        console.log('Error:', e.stack);
+    }
+  });
 }
