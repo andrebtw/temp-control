@@ -13,7 +13,6 @@ function desired_temp() {
   var temp = document.getElementById("temp").value;
   fs.writeFile('temps.txt', temp, (err) => {
     display_temp();
-    // In case of a error throw err.
     if (err) throw err;
 })
 
