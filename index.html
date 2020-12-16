@@ -6,10 +6,14 @@
     <link rel="stylesheet" href="master.css">
   </head>
   <body>
-    <div id="temp_div">
-      <input type="text" name="temp" id="temp" placeholder="Entrer la temperature ici...">
-    </div>
 
+    <div class="page">
+    <label class="field field_v1">
+      <input class="field__input" placeholder="ex : 20" id="temp">
+      <span class="field__label-wrap">
+        <span class="field__label">Temperature</span>
+      </span>
+    </label>
     <div id="button_div">
       <input type="submit" value="Entrer" onclick="desired_temp()">
     </div>
@@ -17,6 +21,18 @@
     <div id="temp_voulue">
       <p id="temps">TEMPERATURE VOULUE : </p>
     </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
     <script type="text/javascript" src="index.js">
 
     </script>
