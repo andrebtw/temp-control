@@ -16,7 +16,7 @@ function display_temp() {
   try {
       var temps = fs.readFileSync('temps.txt', 'utf8');
       console.log(temps)
-      document.getElementById("temps").innerHTML = "TEMPERATURE VOULUE :" + temps + "°C";
+      document.getElementById("temps").innerHTML = "TEMPERATURE VOULUE : " + temps + "°C";
   } catch(e) {
       console.log('Error:', e.stack);
   }
